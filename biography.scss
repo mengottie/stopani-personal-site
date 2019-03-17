@@ -1,0 +1,74 @@
+@import "./common";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/image-list/mdc-image-list";
+@import "@material/ripple/mixins";
+@import "@material/typography/mdc-typography";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+.home {
+  display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+}
+
+.shrine-logo-drawer {
+  display: block;
+  width: 48px;
+  padding: 40px 0 0;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+.shrine-title {
+  @include mdc-typography(headline6);
+  text-align: center;
+  margin: 5px auto;
+}
+
+.product-list {
+  @include mdc-image-list-masonry-columns(1);
+  overflow: auto;
+}
+
+.shrine-drawer {
+  @include mdc-drawer-fill-color-accessible(primary);
+  @include mdc-drawer-z-index(0);
+
+  text-transform: uppercase;
+
+  .mdc-list {
+    margin: 70px 5px auto 5px;
+  }
+
+  .mdc-list-item {
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  .mdc-list .mdc-list-item {
+    @include mdc-states-activated(#fff);
+  }
+
+}
+
+.mdc-top-app-bar__section {
+  span {
+    padding: 4px 0 4px 10px;
+    img {
+      height: 52px;
+    }
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .product-list {
+    @include mdc-image-list-masonry-columns(2);
+    overflow: auto;
+  }
+
+}
+@media (min-width: 769px) {
+  .product-list {
+    @include mdc-image-list-masonry-columns(3);
+    overflow: auto;
+  }
+}
