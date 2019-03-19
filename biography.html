@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shrine (MDC Web Example App)</title>
-  <link rel="shortcut icon" href="https://material.io/favicon.ico">
+  <title>Stopani Federico</title>
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="bundle-home.css">
+  <link rel="stylesheet" href="bundle-biography.css">
 </head>
 <body class="home">
   <aside class="mdc-drawer mdc-drawer--dismissible">
@@ -27,6 +27,9 @@
         <a class="mdc-list-item" href="#">
           Blog
         </a>
+        <a class="mdc-list-item" href="#buy-the-book">
+            Compra il libro
+        </a>
       </nav>
     </div>
   </aside>
@@ -35,49 +38,77 @@
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
               <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
-              <span class="mdc-top-app-bar__title">Federico Stopani</span>
-              <span>
-                  <a href="#"><img src="./assets/button-book.jpg" alt="bottone acquisto libro"></a>
+              <span class="mdc-top-app-bar__title">Federico Stopani
               </span>
+              <div class="title-button">
+                  <a id="goto-buy-book" role="button" href="#buy-the-book">
+                    <h4 aria-label="goto-buy-book"> Acquista il libro</h4>
+                    <img src="./assets/button-book.jpg" alt="bottone acquisto libro">
+                  </a>
+              </div>
             </section>
           </div>
     </header>
     <main class="main-content" id="main-content">
         <div class="mdc-top-app-bar--fixed-adjust">
-          <ul class="mdc-image-list mdc-image-list--masonry product-list mdc-drawer-app-content">
-            <li class="mdc-image-list__item">
-              <img class="mdc-image-list__image" src="assets/asng-77-79.jpg">
-              <div class="mdc-image-list__supporting">
-                <span class="mdc-image-list__label">Azzurro della Squadra Nazionale Giovanile dal 1977 al 1979 nella classe Laser</span>
-              </div>
+          <div class="shrine-body">
+            <ul class="mdc-image-list mdc-image-list--masonry product-list mdc-drawer-app-content">
+              <li class="mdc-image-list__item">
+                <img class="mdc-image-list__image" src="assets/asng-77-79.jpg">
+                <div class="mdc-image-list__supporting">
+                  <span class="mdc-image-list__label">Azzurro della Squadra Nazionale Giovanile dal 1977 al 1979 nella classe Laser</span>
+                </div>
+              </li>
+              <li class="mdc-image-list__item">
+                <img class="mdc-image-list__image" src="assets/asng-87-90.jpg">
+                <div class="mdc-image-list__supporting">
+                  <span class="mdc-image-list__label">Azzurro della Squadra Nazionale Olimpica dal 1987 al 1990 nella classe Soling</span>
+                </div>
+              </li>
+              <li class="mdc-image-list__item">
+                <img class="mdc-image-list__image" src="assets/ceaa-98.jpg">
+                <div class="mdc-image-list__supporting">
+                  <span class="mdc-image-list__label">Campione Europeo Assoluto Altura nel 1998</span>
+                </div>
+              </li>
+              <li class="mdc-image-list__item">
+                <img class="mdc-image-list__image" src="assets/cpfgv-87-90.jpg">
+                <div class="mdc-image-list__supporting">
+                  <span class="mdc-image-list__label">Componente di punta delle Fiamme Gialle della Vela dal 1987 al 1990</span>
+                </div>
+              </li>
+              <li class="mdc-image-list__item">
+                <img class="mdc-image-list__image" src="assets/ctmeritcup-94-01.jpg">
+                <div class="mdc-image-list__supporting">
+                  <span class="mdc-image-list__label">Componente di punta del Team Merit Cup dal 1994 al 2001</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <div id="buy-the-book">
+          <ul>
+            <li>
+                <div class="footer-button-buy">
+                    <a id="goto-buy-book" role="button" href="https://www.amazon.it/Io-sono-Nove-Federico-Stopani-ebook/dp/B07MM1MRZF/ref=mp_s_a_1_1?__mk_it_IT=ÅMÅZÕÑ&qid=1547131497&sr=8-1&pi=AC_SX236_SY340_FMwebp_QL65&keywords=Io+sono+nove&dpPl=1&dpID=51%2B58G8vYUL&ref=plSrch" target="_blank">
+                      <h3 aria-label="goto-buy-book"> Acquistalo su Amazon</h3>
+                      <img src="./assets/copertina.jpeg" alt="bottone acquisto libro su Amazon">
+                    </a>
+                </div>
             </li>
-            <li class="mdc-image-list__item">
-              <img class="mdc-image-list__image" src="assets/asng-87-90.jpg">
-              <div class="mdc-image-list__supporting">
-                <span class="mdc-image-list__label">Azzurro della Squadra Nazionale Olimpica dal 1987 al 1990 nella classe Soling</span>
-              </div>
-            </li>
-            <li class="mdc-image-list__item">
-              <img class="mdc-image-list__image" src="assets/ceaa-98.jpg">
-              <div class="mdc-image-list__supporting">
-                <span class="mdc-image-list__label">Campione Europeo Assoluto Altura nel 1998</span>
-              </div>
-            </li>
-            <li class="mdc-image-list__item">
-              <img class="mdc-image-list__image" src="assets/cpfgv-87-90.jpg">
-              <div class="mdc-image-list__supporting">
-                <span class="mdc-image-list__label">Componente di punta delle Fiamme Gialle della Vela dal 1987 al 1990</span>
-              </div>
-            </li>
-            <li class="mdc-image-list__item">
-              <img class="mdc-image-list__image" src="assets/ctmeritcup-94-01.jpg">
-              <div class="mdc-image-list__supporting">
-                <span class="mdc-image-list__label">Componente di punta del Team Merit Cup dal 1994 al 2001</span>
-              </div>
+            <li>
+                <div class="footer-button-buy">
+                    <a id="goto-buy-book" role="button" href="https://www.kobo.com/it/it/ebook/io-sono-nove" target="_blank">
+                      <h3 aria-label="goto-buy-book"> Acquistalo su Kobo</h3>
+                      <img src="./assets/copertina.jpeg" alt="bottone acquisto libro su Kobo">
+                    </a>
+                </div>
             </li>
           </ul>
         </div>
-    </main>
+      </footer>
   </div>
 
   <script src="bundle-home.js" async></script>

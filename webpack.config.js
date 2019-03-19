@@ -53,7 +53,7 @@ module.exports = [
     module: {
       rules: [{
         test: /biography.scss$/,
-        use: getStyleUse('bundle-home.css')
+        use: getStyleUse('bundle-biography.css')
       }]
     },
   },

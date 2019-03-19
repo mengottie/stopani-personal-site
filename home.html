@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shrine (MDC Web Example App)</title>
-  <link rel="shortcut icon" href="https://material.io/favicon.ico">
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Raleway:900" rel="stylesheet">
   <link rel="stylesheet" href="bundle-home.css">
 </head>
 <body class="home">
@@ -27,40 +28,68 @@
         <a class="mdc-list-item" href="#">
           Blog
         </a>
+        <a class="mdc-list-item" href="#buy-the-book">
+          Compra il libro
+        </a>
       </nav>
     </div>
   </aside>
+
   <div class="mdc-drawer-app-content">
     <header class="mdc-top-app-bar app-bar" id="app-bar">
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-              <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
-              <span class="mdc-top-app-bar__title">Federico Stopani</span>
-              <span>
-                  <a href="#"><img src="./assets/button-book.jpg" alt="bottone acquisto libro"></a>
-              </span>
-            </section>
+                <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                <span class="mdc-top-app-bar__title">Federico Stopani
+                </span>
+                <div class="title-button">
+                    <a id="goto-buy-book" role="button" href="#buy-the-book">
+                      <h4 aria-label="goto-buy-book"> Acquista il libro</h4>
+                      <img src="./assets/button-book.jpg" alt="bottone acquisto libro">
+                    </a>
+                </div>
+              </section>
           </div>
     </header>
     <main class="main-content" id="main-content">
         <div class="mdc-top-app-bar--fixed-adjust">
-          <ul class="mdc-image-list product-list mdc-drawer-app-content">
-            <li class="mdc-image-list__item">
+            <div class="shrine-body ritratto">
               <img class="mdc-image-list__image" src="assets/ritratto-grande.jpg">
-              <div class="mdc-image-list__supporting">
-                <span class="mdc-image-list__label"></span>
-              </div>
-            </li>
-            <li class="mdc-image-list__item">
-              <img class="mdc-image-list__image" src="assets/copertina.jpeg">
-              <div class="mdc-image-list__supporting">
-                <span class="mdc-image-list__label">Il primo libro "IO SONO NOVE"</span>
-              </div>
-            </li>
-          </ul>
+            </div>
+            <div class="shrine-body">
+                <h1>IO SONO NOVE</h1>
+                <p>Il mio primo libro ... forse l'ultimo ... si tratta di un libro terapia con l'intento di condividere il senso dell'esperienza degli errori di valutazione delle persone con cui ho vissute le esperienze pi&ugrave; importanti e causa degli errori pi&ugrave; dolorose e distruttive. L'intento &egrave; di dare un assaggio del sapore delle conseguenze di scelte sbagliate fatte con l'ingenuit&agrave; della fiducia nelle persone sbagliate. Persona &egrave; una parola latina che deriva dal greco <i>prosopon</i> che era il nome della maschera di legno indossata dagli attori che recitavano nei teatri dell'antica Grecia, con il senno di poi questo significato mi rende chiarissimo come sia stato possibile essere stato cos&igrave; ingenuo da causare con le mie scelte di fiducia la mia stessa distruzione. La cura di questa ferita nella'anima ... materializzare attraverso le parole il desiderio di vendetta, giustizia e rivincita con la consapevolezza che non cambia nulla e l'orrore suscitato dia l'immediata, chiara e semplice soluzione se ti ricapita puoi fare scelte migliori ma soprattutto non rifare gli stessi errori ... nel sogno finale di poter ricominciare da zero dodati di una coscienza migliore ...</p>
+                <h2>IO SONO NOVE</h2>
+                <p>il senso dell'esperienza degli errori di valutazione delle persone con cui ho vissute le esperienze pi&ugrave; importanti e causa degli errori pi&ugrave; dolorose e distruttive. L'intento &egrave; di dare un assaggio del sapore delle conseguenze di scelte sbagliate fatte con l'ingenuit&agrave; della fiducia nelle persone sbagliate. Persona &egrave; una parola latina che deriva dal greco <i>prosopon</i> che era il nome della maschera di legno indossata dagli attori che recitavano nei teatri dell'antica Grecia</p>
+                <h3>IO SONO NOVE</h3>
+                <p>... materializzare attraverso le parole il desiderio di vendetta, giustizia e rivincita con la consapevolezza che non cambia nulla e l'orrore suscitato dia l'immediata, chiara e semplice soluzione se ti ricapita puoi fare scelte migliori ma soprattutto non rifare gli stessi errori ... nel sogno finale di poter ricominciare da zero dodati di una coscienza migliore ...</p>
+            </div>
+
         </div>
     </main>
-  </div>
+    <footer>
+      <div id="buy-the-book" class="shrine-body">
+        <ul>
+          <li>
+              <div class="footer-button-buy">
+                  <a id="goto-buy-book" role="button" href="https://www.amazon.it/Io-sono-Nove-Federico-Stopani-ebook/dp/B07MM1MRZF/ref=mp_s_a_1_1?__mk_it_IT=ÅMÅZÕÑ&qid=1547131497&sr=8-1&pi=AC_SX236_SY340_FMwebp_QL65&keywords=Io+sono+nove&dpPl=1&dpID=51%2B58G8vYUL&ref=plSrch" target="_blank">
+                    <h3 aria-label="goto-buy-book"> Acquistalo su Amazon</h3>
+                    <img src="./assets/copertina.jpeg" alt="bottone acquisto libro su Amazon">
+                  </a>
+              </div>
+          </li>
+          <li>
+              <div class="footer-button-buy">
+                  <a id="goto-buy-book" role="button" href="https://www.kobo.com/it/it/ebook/io-sono-nove" target="_blank">
+                    <h3 aria-label="goto-buy-book"> Acquistalo su Kobo</h3>
+                    <img src="./assets/copertina.jpeg" alt="bottone acquisto libro su Kobo">
+                  </a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+   </div>
 
   <script src="bundle-home.js" async></script>
 </body>

@@ -5,9 +5,12 @@
 @import "@material/ripple/mixins";
 @import "@material/typography/mdc-typography";
 @import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/elevation/mdc-elevation";
 
 .home {
   display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-on-background;
 }
 
 .shrine-logo-drawer {
@@ -30,12 +33,26 @@
   overflow: auto;
 }
 
+.shrine-body {
+  @include mdc-elevation(4);
+  display: block;
+  overflow: auto;
+  z-index: 0; // Elevate over the drawer
+  padding: 20px 20px 20px 20px;
+
+  img {
+    height: 30vh;
+    width: auto;
+    border-radius: 10px;
+  }
+}
+
 .shrine-drawer {
-  @include mdc-drawer-fill-color-accessible(primary);
+  @include mdc-drawer-fill-color-accessible(surface);
   @include mdc-drawer-z-index(0);
 
   text-transform: uppercase;
-
+  border-right-width: 0;
   .mdc-list {
     margin: 70px 5px auto 5px;
   }
@@ -57,5 +74,23 @@
     img {
       height: 52px;
     }
+  }
+}
+
+.footer-button-buy {
+  @include mdc-elevation(3);
+}
+
+.buy-the-book {
+  @include mdc-elevation(4);
+  z-index: 0;
+}
+
+.ritratto {
+  img {
+    height: 50vh;
+    width: auto;
+    margin-left: 30vw;
+    border-radius: 50%;
   }
 }

@@ -9,3 +9,67 @@ body {
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
 }
+
+.title-button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border:1px solid #000;
+  border-radius: 20px;
+  margin: 0px 4px 0px 4px;
+  height: 100%;
+  margin-left: auto;
+
+  a {
+    display: inline-flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: $mdc-theme-on-surface;
+  }
+
+  img {
+    height: 50px;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  h4 {
+    margin: 5px 5px 0px 20px;
+  }
+}
+
+#buy-the-book {
+  width: 100%;
+  ul {
+    list-style-type: none;
+    padding: 5px 20px 5px 20px;
+  }
+}
+
+.footer-button-buy{
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1em;
+  a {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 5vw;
+    color: $mdc-theme-on-surface;
+    padding: 10px 10px 10px 20px;
+    img{
+      height: 30vh;
+      margin-left: auto;
+
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .title-button {
+    h4 {
+      margin: 15px 5px 0px 20px;
+    }
+  }
+}
