@@ -43,6 +43,8 @@
   display: block;
   overflow: auto;
   z-index: 0; // Elevate over the drawer
+  padding: 16px;
+  margin: 10px;
 }
 
 .shrine-drawer {
@@ -73,6 +75,15 @@
 .buy-the-book {
   @include mdc-elevation(4);
   z-index: 0;
+}
+
+.bio-card-content {
+  padding: 16px;
+}
+
+.bio-card {
+  height: auto;
+  width: 100%;
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
