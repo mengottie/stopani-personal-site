@@ -40,14 +40,11 @@
 
 .shrine-body {
   @include mdc-elevation(4);
-  display: flex;
-  flex-wrap: wrap;
+
+  z-index: 0; // Elevate over the drawer
   max-width: 1480px;
   margin: 16px;
   padding: 16px;
-  h2 {
-    margin-right: 16px;
-  }
 }
 
 .shrine-drawer {
@@ -78,22 +75,13 @@
   margin-top: 16px;
   background-color: beige;
   color: black;
-  width: calc(100% - 16px - 1*16px);
 }
 
 @media (min-width: 460px) {
-  .bio-card {
-    width: calc((100% - 32px - 3*32px) / 2);
-  }
-
   .shrine-body {
     display: flex;
-  }
-
-}
-@media (min-width: 968px) {
-  .bio-card {
-    width: calc((100% - 32px - 4*32px) / 3);
+    position: relative;
+    box-sizing: border-box;
   }
 
 }

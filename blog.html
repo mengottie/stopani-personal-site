@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stopani Federico</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Raleway:900" rel="stylesheet">
+  <link rel="stylesheet" href="bundle-blog.css">
+</head>
+<body class="home">
+  <aside class="mdc-drawer mdc-drawer--dismissible">
+    <div class="mdc-drawer__header">
+      <img src="./assets/ritratto-piccolo.jpg" alt="Ritratto Stopani Federico">
+      <h1 class="shrine-title">STOPANI</h1>
+    </div>
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <a class="mdc-list-item" href="/home.html">
+          Home
+        </a>
+        <a class="mdc-list-item mdc-list-item--activated" href="/biography.html">
+          Biography
+        </a>
+        <a class="mdc-list-item" aria-selected="true" href="/blog.html">
+          Blog
+        </a>
+        <a class="mdc-list-item" href="#buy-the-book">
+            Compra il libro
+        </a>
+      </nav>
+    </div>
+  </aside>
+  <div class="mdc-drawer-app-content">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+              <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+              <span class="mdc-top-app-bar__title">Federico Stopani
+              </span>
+              <div class="title-button">
+                  <a id="goto-buy-book" role="button" href="#buy-the-book">
+                    <h4 aria-label="goto-buy-book"> Acquista il libro</h4>
+                    <img src="./assets/button-book.jpg" alt="bottone acquisto libro">
+                  </a>
+              </div>
+            </section>
+          </div>
+    </header>
+    <main class="main-content" id="main-content">
+      <div class="shrine-body">
+          <div class="mdc-card bio-card">
+            <div class="bio-card-content mdc-card__media mdc-card__media--16-9 bio-card__media" style="background-image: url('assets/ricerca-verita.jpg');"></div>
+            <div class="bio-card-content bio-card__primary">
+              <h2 class="bio-card__title mdc-typography mdc-typography--headline6">Sarebbe ora di ristabilire la verità su tante cose</h2>
+              <div class="bio-card__secondary mdc-typography mdc-typography--body2">questo è ciò che tutti vorremmo accadesse, ma perché possa avvenire non siamo disposti a impegnarci un solo attimo e diamo una delega in bianco a persone discutibili che lo facciano al posto nostro. E invece dobbiamo essere proprio noi a ricordarci che l'autodeterminazione è un diritto che vale molto di più di qualunque imposizione o delega. Riprendere in mano la nostra vita e il nostro destino, dimostrare che il cittadino buono e remissivo quando viene ingiustamente colpito reagisce e diventa la belva più feroce.</div>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+        <div id="buy-the-book" >
+          <ul>
+            <li>
+                <div class="footer-button-buy">
+                    <a id="goto-buy-book" role="button" href="https://www.amazon.it/Io-sono-Nove-Federico-Stopani-ebook/dp/B07MM1MRZF/ref=mp_s_a_1_1?__mk_it_IT=ÅMÅZÕÑ&qid=1547131497&sr=8-1&pi=AC_SX236_SY340_FMwebp_QL65&keywords=Io+sono+nove&dpPl=1&dpID=51%2B58G8vYUL&ref=plSrch" target="_blank">
+                      <h3 aria-label="goto-buy-book"> Acquistalo su Amazon</h3>
+                      <img src="./assets/copertina.jpeg" alt="bottone acquisto libro su Amazon">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="footer-button-buy">
+                    <a id="goto-buy-book" role="button" href="https://www.kobo.com/it/it/ebook/io-sono-nove" target="_blank">
+                      <h3 aria-label="goto-buy-book"> Acquistalo su Kobo</h3>
+                      <img src="./assets/copertina.jpeg" alt="bottone acquisto libro su Kobo">
+                    </a>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+  </div>
+  <button id="scttBtn">
+      <i class="material-icons">keyboard_arrow_up</i>
+   </button>
+  <script src="bundle-blog.js" async></script>
+</body>
+</html>

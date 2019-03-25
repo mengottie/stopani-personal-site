@@ -14,7 +14,7 @@
   dependencies:
     tslib "^1.9.3"
 
-"@material/button@^^1.0.1":
+"@material/button@^^1.0.0":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@material/button/-/button-1.0.1.tgz#095bc9457ae18bcea5d4a0c8aa0a8a510a31afb1"
   dependencies:
@@ -59,13 +59,25 @@
     focus-trap "^4.0.2"
     tslib "^1.9.3"
 
-"@material/elevation@^1.0.0", "@material/elevation@^1.0.1":
+"@material/elevation@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@material/elevation/-/elevation-1.0.0.tgz#c993d1d59b11357198d1b38947b141e4b4ab9a2d"
   dependencies:
     "@material/animation" "^1.0.0"
     "@material/feature-targeting" "^0.44.1"
     "@material/theme" "^1.0.0"
+
+"@material/fab@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@material/fab/-/fab-1.0.1.tgz#0c0e6675ecc47a4b32350e51d5e1040439be588c"
+  dependencies:
+    "@material/animation" "^1.0.0"
+    "@material/elevation" "^1.0.0"
+    "@material/ripple" "^1.0.1"
+    "@material/rtl" "^0.42.0"
+    "@material/shape" "^1.0.0"
+    "@material/theme" "^1.0.0"
+    "@material/typography" "^1.0.0"
 
 "@material/feature-targeting@^0.44.1":
   version "0.44.1"
@@ -99,7 +111,7 @@
     "@material/theme" "^1.0.0"
     tslib "^1.9.3"
 
-"@material/list@^1.0.1":
+"@material/list@^1.0.0", "@material/list@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@material/list/-/list-1.0.1.tgz#772d29f8061f4e81c950c42a925a7175ca8e394e"
   dependencies:

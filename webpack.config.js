@@ -48,7 +48,7 @@ module.exports = [
     entry: './biography.scss',
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
-      filename: 'style-bundle-home.js'
+      filename: 'style-bundle-biography.js'
     },
     module: {
       rules: [{
@@ -58,13 +58,39 @@ module.exports = [
     },
   },
   {
-    entry: "./home.js",
+    entry: "./biography.js",
     output: {
-      filename: "bundle-home.js"
+      filename: "bundle-biography.js"
     },
     module: {
       loaders: [{
-        test: /home.js$/,
+        test: /biography.js$/,
+        loader: 'babel-loader',
+        query: {presets: ['env']}
+      }]
+    },
+  },
+  {
+    entry: './blog.scss',
+    output: {
+      // This is necessary for webpack to compile, but we never reference this js file.
+      filename: 'style-bundle-biography.js'
+    },
+    module: {
+      rules: [{
+        test: /blog.scss$/,
+        use: getStyleUse('bundle-blog.css')
+      }]
+    },
+  },
+  {
+    entry: "./blog.js",
+    output: {
+      filename: "bundle-blog.js"
+    },
+    module: {
+      loaders: [{
+        test: /blog.js$/,
         loader: 'babel-loader',
         query: {presets: ['env']}
       }]

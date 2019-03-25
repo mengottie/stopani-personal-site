@@ -1,13 +1,17 @@
 @import "./variables";
+@import "@material/elevation/mdc-elevation";
 
 html, body {
   height: 100%;
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Nova Flat', cursive;
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
 }
 
 .title-button {
@@ -17,8 +21,6 @@ body {
   border:1px solid #000;
   border-radius: 20px;
   margin: 0px 4px 0px 4px;
-  height: 100%;
-  margin-left: auto;
 
   a {
     display: inline-flex;
@@ -37,32 +39,77 @@ body {
   }
 }
 
+
 #buy-the-book {
-  width: 100%;
+  @include mdc-elevation(4);
+  z-index: 0; // Elevate over the drawer
+  max-width: 1480px;
+  margin: 16px;
+  padding: 16px;
+
   ul {
     list-style-type: none;
-    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
   }
+}
+
+.mdc-drawer-app-content {
+  width: 100%;
 }
 
 .footer-button-buy{
   display: inline-flex;
   flex-direction: row;
+  background-color: beige;
+  margin-top: 16px;
   width: 100%;
-  margin: 1em;
+  color: black;
   a {
+    &:hover{
+      color:blue;
+    }
     text-decoration: none;
     display: inline-flex;
     flex-direction: row;
     width: 100%;
-    margin-right: 5vw;
-    color: $mdc-theme-on-surface;
+    color: black;
     padding: 10px 10px 10px 20px;
     img{
-      height: 30vh;
+      height: 10vh;
       margin-left: auto;
 
     }
+    h3 {
+      margin-right: 16px;
+    }
+  }
+}
+
+.main-content {
+  margin-top: 80px;
+}
+
+#scttBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #556974; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+
+  &:hover {
+    background-color: #3b0404; /* Add a dark-grey background on hover */
   }
 }
 
@@ -71,5 +118,15 @@ body {
     h4 {
       margin: 15px 5px 0px 20px;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    width: 85%;
+  }
+
+  #buy-the-book {
+    width: 84%;
   }
 }

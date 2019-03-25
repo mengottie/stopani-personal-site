@@ -5,7 +5,6 @@
 @import "@material/ripple/mixins";
 @import "@material/typography/mdc-typography";
 @import "@material/top-app-bar/mdc-top-app-bar";
-@import "@material/elevation/mdc-elevation";
 
 .home {
   display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
@@ -33,14 +32,35 @@
   overflow: auto;
 }
 
+.hero {
+  h2 {
+    color: #9e0000;
+    text-shadow: 1px 1px #be947b;
+  }
+}
+.title1 {
+  margin-left: 45vw;
+}
+.title2 {
+  margin-right: 45vw;
+}
+
+
+
+@media (max-width:424px) {
+  .hero {
+    h2 {
+      font-size: 1em;
+    }
+  }
+}
 .shrine-body {
   @include mdc-elevation(4);
-  display: block;
-  overflow: auto;
-  z-index: 0; // Elevate over the drawer
-  padding: 20px;
-  margin: 10px;
 
+  z-index: 0; // Elevate over the drawer
+  max-width: 1480px;
+  margin: 16px;
+  padding: 16px;
   img {
     height: 30vh;
     width: auto;
@@ -54,28 +74,7 @@
 
   text-transform: uppercase;
   border-right-width: 0;
-  .mdc-list {
-    margin: 70px 5px auto 5px;
-  }
 
-  .mdc-list-item {
-    border-radius: 5px;
-    justify-content: center;
-  }
-
-  .mdc-list .mdc-list-item {
-    @include mdc-states-activated(#fff);
-  }
-
-}
-
-.mdc-top-app-bar__section {
-  span {
-    padding: 4px 0 4px 10px;
-    img {
-      height: 52px;
-    }
-  }
 }
 
 .footer-button-buy {
@@ -87,11 +86,11 @@
   z-index: 0;
 }
 
-.ritratto {
-  img {
-    height: 50vh;
-    width: auto;
-    margin-left: 30vw;
-    border-radius: 50%;
-  }
+
+.hero {
+  background-image: url("/assets/copertina-completa.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 61vw;
+
 }

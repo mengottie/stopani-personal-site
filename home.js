@@ -16,4 +16,20 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
   collapseDrawer();
 });
 
-new MDCList(document.querySelector('.mdc-list'));
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scttBtn").style.display = "block";
+  } else {
+    document.getElementById("scttBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  console.log('click scroll to top');
+}
+
+const scttBtn = document.getElementById('scttBtn');
+scttBtn.addEventListener('click', () => {topFunction()});
