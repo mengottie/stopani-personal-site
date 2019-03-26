@@ -1425,10 +1425,6 @@ a.mdc-list-item {
 .title2 {
   margin-right: 45vw; }
 
-@media (max-width: 424px) {
-  .hero h2 {
-    font-size: 1em; } }
-
 .shrine-body {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   z-index: 0;
@@ -1468,3 +1464,11 @@ a.mdc-list-item {
   background-size: contain;
   background-repeat: no-repeat;
   height: 61vw; }
+
+@media (max-width: 424px) {
+  .hero h2 {
+    font-size: 1em; } }
+
+@media (min-width: 968px) {
+  .hero h2 {
+    font-size: 2em; } }
