@@ -32,15 +32,15 @@
     "webpack-dev-server": "^2.4.3"
   },
   "dependencies": {
-    "@material/button": "^^1.0.1",
+    "@material/button": "^1.1.0",
     "@material/card": "^1.0.1",
     "@material/drawer": "^1.0.1",
     "@material/elevation": "^1.0.0",
+    "@material/fab": "^1.0.1",
     "@material/image-list": "^1.0.0",
     "@material/list": "^1.0.0",
     "@material/ripple": "^1.0.1",
     "@material/textfield": "^1.0.1",
-    "@material/top-app-bar": "^1.0.1",
-    "@material/fab":"^1.0.1"
+    "@material/top-app-bar": "^1.0.1"
   }
 }

@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "bundle-biography.css";
+module.exports = __webpack_require__.p + "bundle-blog.css";
 
 /***/ })
-/******/ ]);
+/******/ ]);/ ]);

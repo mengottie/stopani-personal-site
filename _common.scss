@@ -1,5 +1,6 @@
 @import "./variables";
 @import "@material/elevation/mdc-elevation";
+@import "@material/button/mdc-button";
 
 html, body {
   height: 100%;
@@ -57,6 +58,15 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.lettura-gratuita {
+  a{
+    &:hover{
+      color:#54be0c;
+    }
+    color: #f0c8ee;
+  }
+}
+
 .mdc-drawer-app-content {
   width: 100%;
 }
@@ -110,6 +120,35 @@ h1, h2, h3, h4, h5 {
 
   &:hover {
     background-color: #3b0404; /* Add a dark-grey background on hover */
+  }
+}
+
+.nav-button {
+  @include mdc-button-container-fill-color($nav-color-button);
+  margin: 16px;
+  a {
+    text-decoration: none;
+    color: $mdc-theme-on-surface;
+  }
+}
+
+.contact-author {
+  margin: 16px;
+  padding: 0px;
+  button {
+    @include mdc-button-container-fill-color($social-button);
+    a {
+      font-size: 1.5em;
+    }
+  }
+}
+
+#social-menu {
+  a {
+    padding: 0px 8px 0px 8px;
+    text-decoration: none;
+    color: $mdc-theme-on-surface;
+    font-size: 1.5em;
   }
 }
 

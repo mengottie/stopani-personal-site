@@ -1,6 +1,7 @@
 import {MDCList} from '@material/list';
 import {MDCTopAppBar} from "@material/top-app-bar";
 import {MDCDrawer} from "@material/drawer";
+import {MDCRipple} from '@material/ripple';
 
 const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 const collapseDrawer = () => {
@@ -16,6 +17,9 @@ topAppBar.setScrollTarget(document.getElementById('main-content'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
   collapseDrawer();
 });
+
+
+const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {

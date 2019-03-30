@@ -1,6 +1,7 @@
 import {MDCList} from '@material/list';
 import {MDCTopAppBar} from "@material/top-app-bar";
 import {MDCDrawer} from "@material/drawer";
+import {MDCRipple} from '@material/ripple';
 
 const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 const collapseDrawer = () => {
@@ -17,6 +18,8 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
   collapseDrawer();
 });
 
+const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -31,6 +34,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   console.log('click scroll to top');
 }
+
 
 const scttBtn = document.getElementById('scttBtn');
 scttBtn.addEventListener('click', () => {topFunction()});
