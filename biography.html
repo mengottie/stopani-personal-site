@@ -6,22 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stopani Federico</title>
   <link rel="shortcut icon" href="#">
+  
+  <!-- Host these files by yourself, you will save a DNS resolution + handshakes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Raleway:900" rel="stylesheet">
+
+  <!-- Don't import the whole library only for using 1 or 2 icons, customise it using tools like http://fontello.com/ -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
     integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
     integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+
+    <!-- Use paths pointing to the root: /public/css/bundle-biography.css -->
+    <!-- Add an hash for browser cache invalidation -->
   <link rel="stylesheet" href="bundle-biography.css">
 </head>
 
 <body class="home">
+
+  <!-- This should be a <nav> -->
   <aside class="mdc-drawer mdc-drawer--dismissible">
     <div class="mdc-drawer__header">
+
+      <!-- Mixed path strategy, remain consistent -->
       <img src="./assets/ritratto-piccolo.jpg" alt="Ritratto Stopani Federico">
+
+      <!-- Use BEM for class names -->
       <h1 class="shrine-title">STOPANI</h1>
+
     </div>
     <div class="mdc-drawer__content">
       <nav class="mdc-list">
@@ -38,7 +52,10 @@
           Compra il libro
         </a>
         <div class="mdc-list-item" id="social-menu">
+
+          <!-- When using target blank add rel="noopener" or rel="noreferrer" (https://developers.google.com/web/tools/lighthouse/audits/noopener) -->
           <a href="https://twitter.com/federic213" target="_blank">
+
             <i class="fab fa-twitter"></i>
           </a>
           <a href="https://www.facebook.com/federico.stopani" target="_blank">
@@ -90,8 +107,11 @@
             style="background-image: url('assets/asng-77-79.jpg');"></div>
           <div class="bio-card-content bio-card__primary">
             <h2 class="bio-card__title mdc-typography mdc-typography--headline6">dal 1977 al 1979</h2>
+
+            <!-- this should be a paragraph, an heading is a kind of title, it usually has a related content. This is actually the content related to the above h2 -->
             <h3 class="card-content bio-card__subtitle mdc-typography mdc-typography--subtitle2">Azzurro della Squadra
               Nazionale Giovanile nella classe Laser</h3>
+
           </div>
         </div>
         <div class="mdc-card bio-card">
@@ -453,6 +473,8 @@
             </div>
           </li>
           <li>
+
+            <!-- This button is unnecessary, the <a> is enough -->
             <button class="nav-button mdc-button mdc-button--raised">
               <a href="http://amzn.eu/0eUBktO" target="_blank">
                 <span class="mdc-button__label">Inizia la lettura gratuita</span>
@@ -461,7 +483,10 @@
           </li>
           <li>
             <div class="contact-author">
+
+            <!-- This button is unnecessary, the <a> is enough -->
               <button class="nav-button mdc-button mdc-button--raised">
+
                 <a href="https://twitter.com/federic213" target="_blank">
                   <i class="fab fa-twitter"></i>
                 </a>
@@ -487,9 +512,13 @@
       </div>
     </footer>
   </div>
+
+  <!-- This button is unnecessary, the <a> is enough -->  
   <button id="scttBtn">
     <i class="material-icons">keyboard_arrow_up</i>
   </button>
+
+  <!-- Good use of async! -->
   <script src="bundle-biography.js" async></script>
 </body>
 

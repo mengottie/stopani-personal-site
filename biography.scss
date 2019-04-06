@@ -71,18 +71,25 @@
   padding: 16px;
 }
 
+// This style is defined in multiple scss files. DRY: extract it and put it in a separate file that you can import where needed
 .bio-card {
   height: auto;
+
+  // Compact all these in 1 statement
   margin: 16px;
   margin-left: 16px;
   margin-top: 16px;
+  
   background-color: beige;
   color: black;
+
+  // this calculation makes no sense. if the value 1 can be different for any reason, it should be a variable, or this style should be the result of a mixin
   width: calc(100% - 16px - 1*16px);
 }
 
 @media (min-width: 460px) {
   .bio-card {
+    // this calculation makes no sense. if the value 3 can be different for any reason, it should be a variable, or this style should be the result of a mixin
     width: calc((100% - 32px - 3*32px) / 2);
   }
 
@@ -93,6 +100,7 @@
 }
 @media (min-width: 968px) {
   .bio-card {
+    // this calculation makes no sense. if the value 4 can be different for any reason, it should be a variable, or this style should be the result of a mixin
     width: calc((100% - 32px - 4*32px) / 3);
   }
 

@@ -1,3 +1,4 @@
+# Don't use boilerplate .gitignore file, create your own. You probably only need 3 or 4 lines in total for this project
 # Logs
 logs
 *.log
