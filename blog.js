@@ -1,4 +1,6 @@
+// remove unused import
 import {MDCList} from '@material/list';
+
 import {MDCTopAppBar} from "@material/top-app-bar";
 import {MDCDrawer} from "@material/drawer";
 import {MDCRipple} from '@material/ripple';

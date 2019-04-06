@@ -33,6 +33,8 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+  // console.log should never go to production
   console.log('click scroll to top');
 }
 
