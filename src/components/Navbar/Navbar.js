@@ -30,7 +30,7 @@ const BuyTheBook = styled.div`
     color: ${white}
 `;
 
-const Navbar = () => {
+function Navbar() {
     return (
         <Wrapper>
             <Hamburger onClick={() => console.log('foo')}>
