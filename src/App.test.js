@@ -1,8 +1,8 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { create } from 'react-test-renderer';
 import App from './App';
 
-it('renders without crashing', () => {
-  const component = shallow(<App />);
-  expect(component.find('a').text()).toBe('Learn React');
+it('renders correctly', () => {
+  const component = create(<App />);
+  expect(component.toJSON()).toMatchSnapshot();
 });
