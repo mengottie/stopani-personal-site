@@ -1,47 +1,25 @@
 import React from 'react';
+import { create } from 'react-test-renderer';
 import { shallow } from 'enzyme';
+
 import Navbar from './Navbar';
 
+const sideMenuToggle = jest.fn();
+
 describe('Navbar', () => {
-    let component;
+    let createdComponent;
+    let shallowComponent;
 
     beforeEach(() => {
-        component = shallow(<Navbar />);
-    })
-
-    describe('Title', () => {
-        it('has correct text', () => {
-            console.log('Foo', component.find('Title'))
-            expect(component.find('Title').text()).toBe('Federico Stopani');
-        });
+        createdComponent = create(<Navbar toggleSideMenuHandler={sideMenuToggle} />);
+        shallowComponent = shallow(<Navbar toggleSideMenuHandler={sideMenuToggle} />);
     });
 
-    // describe('Hamburger', () => {
-    // describe('Opening animations', () => {
-    //     it('opens the side menu when clicked', () => {
-    //         component.find('Hamburger').simulate('click');
-    //         expect(false).toBe(true);
-    //     });
+    it('renders correctly', () => {
+        expect(createdComponent.toJSON()).toMatchSnapshot();
+    });
 
-    //     it('moves the doc body on the right when clicked', () => {
-    //         expect(false).toBe(true);
-    //     })
-    // })
-
-    // describe('Closing animations', () => {
-    //     it('closes the side menu when clicked again', () => {
-    //         expect(false).toBe(true);
-    //     });
-
-    //     it('moves the doc body on the left when clicked again', () => {
-    //         expect(false).toBe(true);
-    //     });
-    // });
-    // });
-
-    // describe('Link to book', () => {
-    //     it('contains an href attribute pointing at #buy-the-book', () => {
-    //         expect(false).toBe(true);
-    //     });
-    // });
+    it('has correct text', () => {
+        expect(shallowComponent.find('Title').text()).toBe('Federico Stopani');
+    });
 });
