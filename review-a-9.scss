@@ -1,0 +1,87 @@
+@import "./common";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/image-list/mdc-image-list";
+@import "@material/ripple/mixins";
+@import "@material/typography/mdc-typography";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/elevation/mdc-elevation";
+@import "@material/card/mdc-card";
+
+.home {
+  display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-on-background;
+}
+
+.shrine-logo-drawer {
+  display: block;
+  width: 48px;
+  padding: 40px 0 0;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+.shrine-title {
+  @include mdc-typography(headline6);
+  text-align: center;
+  margin: 5px auto;
+}
+
+.product-list {
+  @include mdc-image-list-masonry-columns(1);
+  overflow: auto;
+}
+
+.mdc-image-list__item {
+  @include mdc-elevation(3);
+}
+
+
+.shrine-body {
+  @include mdc-elevation(4);
+  flex-direction: column;
+  z-index: 0; // Elevate over the drawer
+  max-width: 1480px;
+  margin: 16px;
+  padding: 16px;
+}
+
+.shrine-drawer {
+  @include mdc-drawer-fill-color-accessible(surface);
+  @include mdc-drawer-z-index(0);
+  text-transform: uppercase;
+  border-right-width: 0;
+
+}
+
+.footer-button-buy {
+  @include mdc-elevation(3);
+}
+
+.buy-the-book {
+  @include mdc-elevation(4);
+  z-index: 0;
+}
+
+.bio-card-content {
+  padding: 16px;
+}
+
+.bio-card {
+  height: auto;
+  margin: 16px;
+  margin-left: 16px;
+  margin-top: 16px;
+  background-color: beige;
+  color: black;
+}
+
+@media (min-width: 460px) {
+  .shrine-body {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+}

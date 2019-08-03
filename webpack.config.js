@@ -40,7 +40,7 @@ module.exports = [
       loaders: [{
         test: /home.js$/,
         loader: 'babel-loader',
-        query: {presets: ['env']}
+        query: { presets: ['env'] }
       }]
     },
   },
@@ -66,7 +66,7 @@ module.exports = [
       loaders: [{
         test: /biography.js$/,
         loader: 'babel-loader',
-        query: {presets: ['env']}
+        query: { presets: ['env'] }
       }]
     },
   },
@@ -92,8 +92,60 @@ module.exports = [
       loaders: [{
         test: /blog.js$/,
         loader: 'babel-loader',
-        query: {presets: ['env']}
+        query: { presets: ['env'] }
       }]
     },
+  },
+  {
+    entry: './interview-a-9.scss',
+    output: {
+      // This is necessary for webpack to compile, but we never reference this js file.
+      filename: 'style-bundle-interview-a-9.js'
+    },
+    module: {
+      rules: [{
+        test: /interview-a-9.scss$/,
+        use: getStyleUse('bundle-interview-a-9.css')
+      }]
+    },
+  },
+  {
+    entry: "./interview-a-9.js",
+    output: {
+      filename: "bundle-interview-a-9.js"
+    },
+    module: {
+      loaders: [{
+        test: /interview-a-9.js$/,
+        loader: 'babel-loader',
+        query: { presets: ['env'] }
+      }]
+    }
+  },
+  {
+    entry: './review-a-9.scss',
+    output: {
+      // This is necessary for webpack to compile, but we never reference this js file.
+      filename: 'style-bundle-review-a-9.js'
+    },
+    module: {
+      rules: [{
+        test: /review-a-9.scss$/,
+        use: getStyleUse('bundle-review-a-9.css')
+      }]
+    },
+  },
+  {
+    entry: "./review-a-9.js",
+    output: {
+      filename: "bundle-review-a-9.js"
+    },
+    module: {
+      loaders: [{
+        test: /review-a-9.js$/,
+        loader: 'babel-loader',
+        query: { presets: ['env'] }
+      }]
+    }
   }
 ];
