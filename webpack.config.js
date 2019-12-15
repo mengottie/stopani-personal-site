@@ -22,7 +22,7 @@ module.exports = [
     entry: './home.scss',
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
-      filename: 'style-bundle-home.js'
+      filename: './style-bundle-home.js'
     },
     module: {
       rules: [{
@@ -34,7 +34,7 @@ module.exports = [
   {
     entry: "./home.js",
     output: {
-      filename: "bundle-home.js"
+      filename: "./bundle-home.js"
     },
     module: {
       rules: [{
@@ -48,7 +48,7 @@ module.exports = [
     entry: './biography.scss',
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
-      filename: 'style-bundle-biography.js'
+      filename: './style-bundle-biography.js'
     },
     module: {
       rules: [{
@@ -60,7 +60,7 @@ module.exports = [
   {
     entry: "./biography.js",
     output: {
-      filename: "bundle-biography.js"
+      filename: "./bundle-biography.js"
     },
     module: {
       rules: [{
@@ -74,7 +74,7 @@ module.exports = [
     entry: './blog.scss',
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
-      filename: 'style-bundle-biography.js'
+      filename: './style-bundle-biography.js'
     },
     module: {
       rules: [{
@@ -86,7 +86,7 @@ module.exports = [
   {
     entry: "./blog.js",
     output: {
-      filename: "bundle-blog.js"
+      filename: "./bundle-blog.js"
     },
     module: {
       rules: [{
@@ -100,7 +100,7 @@ module.exports = [
     entry: './interview-a-9.scss',
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
-      filename: 'style-bundle-interview-a-9.js'
+      filename: './style-bundle-interview-a-9.js'
     },
     module: {
       rules: [{
@@ -112,7 +112,7 @@ module.exports = [
   {
     entry: "./interview-a-9.js",
     output: {
-      filename: "bundle-interview-a-9.js"
+      filename: "./bundle-interview-a-9.js"
     },
     module: {
       rules: [{
@@ -126,7 +126,7 @@ module.exports = [
     entry: './review-a-9.scss',
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
-      filename: 'style-bundle-review-a-9.js'
+      filename: './style-bundle-review-a-9.js'
     },
     module: {
       rules: [{
@@ -138,7 +138,7 @@ module.exports = [
   {
     entry: "./review-a-9.js",
     output: {
-      filename: "bundle-review-a-9.js"
+      filename: "./bundle-review-a-9.js"
     },
     module: {
       rules: [{

@@ -50,6 +50,10 @@
   }
 }
 
+.footer-shrine-body {
+  flex-direction: column;
+}
+
 .shrine-drawer {
   @include mdc-drawer-fill-color-accessible(surface);
   @include mdc-drawer-z-index(0);

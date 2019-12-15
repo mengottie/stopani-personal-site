@@ -41,6 +41,7 @@
 .shrine-body {
   @include mdc-elevation(4);
 
+  flex-direction: column;
   z-index: 0; // Elevate over the drawer
   max-width: 1480px;
   margin: 16px;

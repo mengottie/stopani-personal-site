@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-#buy-the-book {
+.buy-the-book {
   @include mdc-elevation(4);
   z-index: 0; // Elevate over the drawer
   max-width: 1480px;
@@ -170,6 +170,6 @@ h1, h2, h3, h4, h5 {
   }
 
   .title-button {
-    margin: 0px 0px 0px 780px;
+    margin: 0px 0px 0px 380px;
   }
 }

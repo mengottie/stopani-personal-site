@@ -55,6 +55,7 @@
   max-width: 1480px;
   margin: 16px;
   padding: 16px;
+  flex-direction: column;
   img {
     height: 30vh;
     width: auto;
@@ -82,15 +83,16 @@
 
 
 .hero {
-  background-image: url("/assets/copertina-completa.jpg");
+  background-image: url("/assets/cop-luck-9.jpg");
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 61vw;
-
+  height: 50vw;
 }
 
 @media (max-width:424px) {
   .hero {
+    height: 60vw;
     h2 {
       font-size: 1em;
     }
@@ -99,6 +101,7 @@
 
 @media (min-width:968px) {
   .hero {
+    height: 90vw;
     h2 {
       font-size: 2em;
     }
