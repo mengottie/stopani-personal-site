@@ -37,7 +37,7 @@ module.exports = [
       filename: "bundle-home.js"
     },
     module: {
-      loaders: [{
+      rules: [{
         test: /home.js$/,
         loader: 'babel-loader',
         query: { presets: ['env'] }
@@ -63,7 +63,7 @@ module.exports = [
       filename: "bundle-biography.js"
     },
     module: {
-      loaders: [{
+      rules: [{
         test: /biography.js$/,
         loader: 'babel-loader',
         query: { presets: ['env'] }
@@ -89,7 +89,7 @@ module.exports = [
       filename: "bundle-blog.js"
     },
     module: {
-      loaders: [{
+      rules: [{
         test: /blog.js$/,
         loader: 'babel-loader',
         query: { presets: ['env'] }
@@ -115,7 +115,7 @@ module.exports = [
       filename: "bundle-interview-a-9.js"
     },
     module: {
-      loaders: [{
+      rules: [{
         test: /interview-a-9.js$/,
         loader: 'babel-loader',
         query: { presets: ['env'] }
@@ -141,7 +141,7 @@ module.exports = [
       filename: "bundle-review-a-9.js"
     },
     module: {
-      loaders: [{
+      rules: [{
         test: /review-a-9.js$/,
         loader: 'babel-loader',
         query: { presets: ['env'] }
