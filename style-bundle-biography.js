@@ -70,4 +70,4 @@
 module.exports = __webpack_require__.p + "bundle-blog.css";
 
 /***/ })
-/******/ ]);/ ]);
+/******/ ]);
