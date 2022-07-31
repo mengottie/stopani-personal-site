@@ -63,6 +63,12 @@
   }
 }
 
+.shrine-body-image {
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .shrine-drawer {
   @include mdc-drawer-fill-color-accessible(surface);
   @include mdc-drawer-z-index(0);
@@ -83,11 +89,11 @@
 
 
 .hero {
-  background-image: url("/assets/cop-luck-9.jpg");
-  background-position: center;
+  background-image: url("/assets/yes-logo.jpg");
+  background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 50vw;
+  height: 20vw;
 }
 
 @media (max-width:424px) {
